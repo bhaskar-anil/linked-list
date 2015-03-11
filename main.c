@@ -63,7 +63,26 @@ void PrintNth(struct node* head, int n){
         printf("\nList is too small to get %d th node.",n);
     }
 }
+
+struct node* nthNode getNth(struct node* head, int n){
+    //Abort if n is more than List's length
+    int len=Length(head);
+    int count=0;
+    if(len>=n){
+        while(count!=n){
+            head=head->next;
+            count++;
+        }
+        return head;
+    }else{
+        printf("\nList is too small to get %d th node.",n);
+    }
+}
 /*Delete Nth node*/
+void delNth(struct node* head, int n){
+    struct node* nthNode=malloc(sizeof(struct node));
+    nthNode=getNth();
+}
 
 int main()
 {
