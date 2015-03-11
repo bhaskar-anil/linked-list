@@ -63,7 +63,7 @@ void PrintNth(struct node* head, int n){
         printf("\nList is too small to get %d th node.",n);
     }
 }
-
+/*Delete Nth node*/
 
 int main()
 {
